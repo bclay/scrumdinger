@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1529DD5D2CD1EC2B0048C665 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1529DD5C2CD1EC2B0048C665 /* TrailingIconLabelStyle.swift */; };
 		1593F37C2CD17E58006F9D1C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593F37B2CD17E58006F9D1C /* Theme.swift */; };
 		1593F37E2CD1812B006F9D1C /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593F37D2CD1812B006F9D1C /* DailyScrum.swift */; };
 		1593F3802CD1ADDE006F9D1C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1593F37F2CD1ADDE006F9D1C /* CardView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1529DD5C2CD1EC2B0048C665 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		1593F37B2CD17E58006F9D1C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		1593F37D2CD1812B006F9D1C /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		1593F37F2CD1ADDE006F9D1C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				AAAE8023294793AB0099DABC /* Assets.xcassets */,
 				AAAE8025294793AB0099DABC /* Preview Content */,
 				1593F37F2CD1ADDE006F9D1C /* CardView.swift */,
+				1529DD5C2CD1EC2B0048C665 /* TrailingIconLabelStyle.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1593F37E2CD1812B006F9D1C /* DailyScrum.swift in Sources */,
+				1529DD5D2CD1EC2B0048C665 /* TrailingIconLabelStyle.swift in Sources */,
 				1593F37C2CD17E58006F9D1C /* Theme.swift in Sources */,
 				AAAE8022294793AB0099DABC /* MeetingView.swift in Sources */,
 				AAAE8020294793AB0099DABC /* ScrumdingerApp.swift in Sources */,
