@@ -7,7 +7,7 @@ import SwiftUI
 struct DetailEditView: View {
     @Binding var scrum: DailyScrum
     @State private var newAttendeeName = ""
-    
+
     var body: some View {
         Form {
             Section(header: Text("Meeting Info")) {
@@ -19,7 +19,7 @@ struct DetailEditView: View {
                     .accessibilityValue("\(scrum.lengthInMinutes) minutes")
                     Spacer()
                     Text("\(scrum.lengthInMinutes) minutes")
-                        .accessibilityHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                        .accessibilityHidden(true)
                 }
                 ThemePicker(selection: $scrum.theme)
             }
@@ -31,7 +31,7 @@ struct DetailEditView: View {
                     scrum.attendees.remove(atOffsets: indices)
                 }
                 HStack {
-                    TextField("New Attendee", text:$newAttendeeName)
+                    TextField("New Attendee", text: $newAttendeeName)
                     Button(action: {
                         withAnimation {
                             let attendee = DailyScrum.Attendee(name: newAttendeeName)
@@ -49,6 +49,8 @@ struct DetailEditView: View {
     }
 }
 
-#Preview {
-    DetailEditView(scrum: .constant(DailyScrum.sampleData[0]))
+struct DetailEditView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailEditView(scrum: .constant(DailyScrum.sampleData[0]))
+    }
 }
