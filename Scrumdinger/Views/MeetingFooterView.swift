@@ -6,7 +6,7 @@ import SwiftUI
 
 struct MeetingFooterView: View {
     let speakers: [ScrumTimer.Speaker]
-    let skipAction: ()->Void
+    var skipAction: ()->Void
     
     private var speakerNumber: Int? {
         guard let index = speakers.firstIndex(where: { !$0.isCompleted }) else { return nil }
@@ -19,6 +19,7 @@ struct MeetingFooterView: View {
         guard let speakerNumber = speakerNumber else { return "No more speakers" }
         return "Speaker \(speakerNumber) of \(speakers.count)"
     }
+    
     var body: some View {
         VStack {
             HStack {

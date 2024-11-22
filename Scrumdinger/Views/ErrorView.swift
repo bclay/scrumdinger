@@ -11,7 +11,7 @@ struct ErrorView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("An error has occured!")
+                Text("An error has occurred!")
                     .font(.title)
                     .padding(.bottom)
                 Text(errorWrapper.error.localizedDescription)

@@ -10,9 +10,9 @@ class ScrumStore: ObservableObject {
     
     private static func fileURL() throws -> URL {
         try FileManager.default.url(for: .documentDirectory,
-                                   in: .userDomainMask,
-                                   appropriateFor: nil,
-                                   create: false)
+                                    in: .userDomainMask,
+                                    appropriateFor: nil,
+                                    create: false)
         .appendingPathComponent("scrums.data")
     }
     
